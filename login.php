@@ -7,7 +7,7 @@ $contraseña=$_POST['password'];
 session_start();
 $_SESSION['usuario']=$usuario;
 
-$conexion=mysqli_connect("mysql.face.ubiobio.cl","ptsm","ptsm2022","ptsn_bd");
+$conexion=mysqli_connect("mysql.face.ubiobio.cl","ptsn","ptsn2022","ptsn_bd");
 
 $consulta="SELECT * FROM Usuario where Usuario_Correo='$usuario' and Usuario_Pass='$contraseña'";
 echo $consulta;

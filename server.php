@@ -1,8 +1,8 @@
 <?php
 $host = 'mysql.face.ubiobio.cl';
 $port = 3306;
-$user = 'ptsm';
-$password = 'ptsm2022';
+$user = 'ptsn';
+$password = 'ptsn2022';
 $dbname = 'ptsn_bd';
 
 // Create connection
