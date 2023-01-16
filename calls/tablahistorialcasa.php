@@ -1,20 +1,20 @@
 <?php
  
 // DB table to use
-$table = 'Usuario';
+$table = 'Sensor';
  
 // Table's primary key
-$primaryKey = 'Usuario_Id';
+$primaryKey = 'Sensor_Id';
  
 // Array of database columns which should be read and sent back to DataTables.
 // The `db` parameter represents the column name in the database, while the `dt`
 // parameter represents the DataTables column identifier. In this case simple
 // indexes
 $columns = array(
-    array( 'db' => 'Usuario_Id', 'dt' => 0 ),
-    array( 'db' => 'Usuario_Correo',  'dt' => 1 ),
-    array( 'db' => 'Usuario_Pass',   'dt' => 2 ),
-    array( 'db' => 'Tipo_Usuario_Id','dt' => 3)
+    array( 'db' => 'Sensor_Id', 'dt' => 0 ),
+    array( 'db' => 'Humedad_Relativa',  'dt' => 1 ),
+    array( 'db' => 'Temperatura',   'dt' => 2 ),
+    array( 'db' => 'Sens_Fecha_Hora','dt' => 3)
    
 );
  
