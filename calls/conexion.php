@@ -1,5 +1,5 @@
 <?php
-	$mysqli = new mysqli('db4free.net', 'ptsnbd', 'ptsn2022', 'ptsnbd');
+	$mysqli = new mysqli('localhost', 'root', '', 'ptsnbd');
 	
 	if($mysqli->connect_error){
 		

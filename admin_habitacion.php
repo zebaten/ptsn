@@ -77,7 +77,7 @@
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="admin_home.html">Home</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="admin_home.php">Home</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="admin_usuarios.php">Usuarios</a>
                       <!-- <ul class="rd-menu rd-navbar-dropdown">
@@ -105,8 +105,8 @@
                     </li>
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="admin_casas.php">Casas</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="admin_historiales.html">Historiales</a>
-                    </li>
+                    <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="admin_historiales.html">Historiales</a>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -236,7 +236,12 @@
           </div>
           </div>
         </div> -->
-
+        <footer class="section footer-classic">
+        <div class="container">
+          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Proyecto de título</span><span>.&nbsp;</span>Sebastián Navarrete Catril</p>
+        </div>
+      </footer>
+    </div>
     </div>
     
     <script src="js/core.min.js"></script>

@@ -21,11 +21,12 @@
   $resultado1 = $mysqli->query($sql1);
 	$row1 = $resultado1->fetch_array(MYSQLI_ASSOC);
 
-  $sql2 = "SELECT * FROM Habitacion WHERE Casa_Id = '". $row1['Casa_Id'] ."'";
-	$resultado2 = $mysqli->query($sql2);
-	$row2 = $resultado2->fetch_array(MYSQLI_ASSOC);
 
-  $sql3 = "SELECT * FROM Sensor WHERE Habitacion_Id = '". $row2['Habitacion_Id'] ."'";
+  $sql3 = "SELECT h.Hab_Nombre, s.Temperatura, s.Humedad_Relativa, s.Sens_Fecha_Hora 
+  FROM Casa c, Habitacion h, Sensor s 
+  WHERE c.Casa_Id = '". $row1['Casa_Id'] ."' AND c.Casa_Id = h.Casa_Id AND h.Habitacion_Id = s.Habitacion_Id";
+
+  $sql2 = "SELECT * FROM Habitacion WHERE Casa_Id = '". $row1['Casa_Id'] ."'";
 	$resultado3 = $mysqli->query($sql3);
   
 	
@@ -119,7 +120,6 @@
 					<thead>
 						<tr>
 							<th>Habitación_Nombre</th>
-							<th>Sensor_Id</th>
 							<th>Temperatura</th>
 							<th>Humedad</th>
               <th>Hora</th>
@@ -129,10 +129,7 @@
           <tbody>
 						<?php while($row3 = $resultado3->fetch_array(MYSQLI_ASSOC)) { ?>
 							<tr>
-              <td><?php $query = $mysqli -> query ("SELECT Hab_Nombre FROM Habitacion WHERE Habitacion_Id='" . $row3['Habitacion_Id'] . "'");
-  
-  $valores1 = mysqli_fetch_array($query); echo $valores1['Hab_Nombre']; ?></td>
-								<td><?php echo $row3['Sensor_Id']; ?></td>
+                <td><?php echo $row3['Hab_Nombre']; ?></td>
 								<td><?php echo $row3['Temperatura']; ?></td>
                 <td><?php echo $row3['Humedad_Relativa']; ?></td>
                 <td><?php echo $row3['Sens_Fecha_Hora']; ?></td>
@@ -142,6 +139,11 @@
 				</table>
 			</div>
       </div>
+      <footer class="section footer-classic">
+        <div class="container">
+          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Proyecto de título</span><span>.&nbsp;</span>Sebastián Navarrete Catril</p>
+        </div>
+      </footer>
     </div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>

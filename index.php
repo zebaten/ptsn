@@ -39,7 +39,7 @@
                       <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                     <!--RD Navbar Brand-->
                     <div class="rd-navbar-brand">
-                      <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-672x102.png" alt="" width="336" height="51"/></a>
+                      <!--Brand--><a class="brand" href="index.php"><img class="brand-logo-dark" src="images/logo-default-672x102.png" alt="" width="336" height="51"/></a>
                     </div>
                   </div>
                 <!-- <button type="button" class="rd-nav-link" data-toggle="modal" data-target="#exampleModalCenter">

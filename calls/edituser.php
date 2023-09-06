@@ -5,7 +5,7 @@
     $id = $_POST['id'];
 	$email = $_POST['email'];
 	$pass = $_POST['pass'];
-	$tipo = $_POST['estado_civil'];
+	$tipo = $_POST['tipo_usuario'];
 
 	
 	$sql = "UPDATE Usuario SET Usuario_Correo='$email', Usuario_Pass='$pass', Tipo_Usuario_Id='$tipo' WHERE Usuario_Id = '$id'";

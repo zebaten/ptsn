@@ -83,7 +83,7 @@ if(isset($_POST{'btncerrar'})){
         </div>
       </header>
       <!--Contacts-->
-      <section class="section section-lg bg-gray-700">
+      <!-- <section class="section section-lg bg-gray-700">
         <div class="container">
           <div class="row row-30">
             <div class="col-lg-4">
@@ -160,10 +160,10 @@ if(isset($_POST{'btncerrar'})){
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <footer class="section footer-classic">
         <div class="container">
-          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Business Company</span><span>.&nbsp;</span><a href="#">Privacy Policy</a>. Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com/">Templatemonster</a></p>
+          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Proyecto de título</span><span>.&nbsp;</span>Sebastián Navarrete Catril</p>
         </div>
       </footer>
     </div>

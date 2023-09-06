@@ -103,22 +103,24 @@
 					</div>
 
 						<div class="form-group">
-							<select id=listausuario name=listausuario>
-        						<option value="<?php echo $row['Usuario_Id']; ?>"><?php echo $row3['Usuario_Correo']; ?></option>
-        							<?php
-								// Realizamos la consulta para extraer los datos
-										$query = $mysqli -> query ("SELECT * FROM Usuario U WHERE U.Usuario_Id NOT IN (SELECT C.Usuario_Id FROM Casa C)");
-										while ($valores = mysqli_fetch_array($query)) {
-								// En esta sección estamos llenando el select con datos extraidos de una base de datos.
-											echo '<option value="'.$valores['Usuario_Id'].'">'.$valores['Usuario_Correo'].'</option>';
-										}
-										?>
-      						</select>
+							<div class="col-sm-10">
+								<select id=listausuario name=listausuario>
+									<option value="<?php echo $row['Usuario_Id']; ?>"><?php echo $row3['Usuario_Correo']; ?></option>
+										<?php
+									// Realizamos la consulta para extraer los datos
+											$query = $mysqli -> query ("SELECT * FROM Usuario U WHERE U.Usuario_Id NOT IN (SELECT C.Usuario_Id FROM Casa C)");
+											while ($valores = mysqli_fetch_array($query)) {
+									// En esta sección estamos llenando el select con datos extraidos de una base de datos.
+												echo '<option value="'.$valores['Usuario_Id'].'">'.$valores['Usuario_Correo'].'</option>';
+											}
+											?>
+								</select>
+							</div>
 						</div>
 				
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						<a href="admin_casas.php" class="btn btn-default">Regresar</a>
+						<a href="../admin_casas.php" class="btn btn-default">Regresar</a>
 						<button type="submit" class="btn btn-primary">Guardar</button>
 					</div>
 				</div>

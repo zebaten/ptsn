@@ -1,7 +1,7 @@
 <div id="exampleModalCenter" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form name="add_product" id="add_product" method="POST" action="../calls/insertuser.php" >
+			<form name="add_usuario" id="add_usuario" method="POST" action="../calls/insertuser.php" >
 					<div class="modal-header">						
 						<h4 class="modal-title">Agregar Usuario</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

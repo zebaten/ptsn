@@ -3,7 +3,7 @@
 $usuario=$_POST['email'];
 $contraseña=$_POST['password'];
 //$conexion=mysqli_connect("mysql.face.ubiobio.cl","ptsn","ptsn2022","ptsn_bd");
-$conexion=mysqli_connect("db4free.net","ptsnbd","ptsn2022","ptsnbd");
+$conexion=mysqli_connect("localhost","root","","ptsnbd");
 
 $consulta="SELECT * FROM Usuario where Usuario_Correo='$usuario' and Usuario_Pass='$contraseña'";
 

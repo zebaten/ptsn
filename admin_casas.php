@@ -112,8 +112,8 @@
                     </li>
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="admin_casas.php">Casas</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="admin_historiales.php">Historiales</a>
-                    </li>
+                    <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="admin_historiales.php">Historiales</a>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -263,7 +263,11 @@ echo $valores3['Usuario_Correo']; ?></td>
           </div>
           </div>
         </div> -->
-
+        <footer class="section footer-classic">
+        <div class="container">
+          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Proyecto de título</span><span>.&nbsp;</span>Sebastián Navarrete Catril</p>
+        </div>
+      </footer>
     </div>
     
     <script src="js/core.min.js"></script>
